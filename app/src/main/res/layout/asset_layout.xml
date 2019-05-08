@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:id="@+id/ll_wrapall"
+    android:gravity="center_vertical"
+    android:background="@color/white">
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_assetserialnum"
+        android:gravity="center"
+        android:padding="2dp"
+        />
+    <TextView
+        android:padding="2dp"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_assetname"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+    <TextView
+        android:textColor="@color/black"
+        android:padding="2dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_checkstate"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        />
+</LinearLayout>

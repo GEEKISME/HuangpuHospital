@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/app_back_pure"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SummaryActivity">
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/tv_summary"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_common"
+        android:id="@+id/btn_back"
+        android:textColor="@color/red"
+        android:text="返回"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:id="@+id/xrcv"
+        app:layout_constraintTop_toBottomOf="@+id/tv_summary"
+        app:layout_constraintBottom_toTopOf="@+id/btn_back"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+</android.support.constraint.ConstraintLayout>

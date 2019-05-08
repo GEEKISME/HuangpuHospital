@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.SettingActivity">
+    <include android:id="@+id/titlebar"
+        layout="@layout/titlebar"
+        />
+    <RelativeLayout
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/titlebar"
+        android:id="@+id/rl_wrapswitch"
+        android:background="@drawable/bluetooth_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:id="@+id/tv_tipinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="开启蓝牙"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            />
+        <com.kyleduo.switchbutton.SwitchButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:checked="false"
+            app:kswTintColor="@color/blue"
+            android:layout_centerVertical="true"
+            android:id="@+id/switchbutton"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/rl_wrapswitch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/tv_bindeddevice"
+        android:text="已配对设备"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        />
+    <View
+        android:layout_below="@+id/tv_bindeddevice"
+        android:id="@+id/alineone"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_c5c4c3"
+        />
+    <LinearLayout
+        android:layout_below="@+id/alineone"
+        android:id="@+id/ll_bindedlist"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_weight="10"
+            android:id="@+id/txt_device_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Small Text"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/rightarrow"
+            android:layout_weight="1"
+            android:id="@+id/iv_right"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/ll_bindedlist"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="可用设备"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+        android:id="@+id/tv_capabledevice"
+        />
+    <View
+        android:layout_below="@+id/tv_capabledevice"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/aline"
+        android:background="@color/color_c5c4c3"
+        />
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xrcv"
+        android:layout_below="@+id/aline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_search"
+        android:layout_above="@+id/btn_search"
+        >
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/btn_search"
+        android:text="查找设备"
+        android:textColor="@color/red"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

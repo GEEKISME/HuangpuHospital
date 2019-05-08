@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="10dp"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/tv_background"
+        android:background="@drawable/tv_back"/>
+
+    <TextView
+        android:id="@+id/tv_serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="资产编号:"
+        android:textColor="@color/black"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_serial_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dassassdss"
+        android:textColor="@color/black"
+        android:layout_alignBottom="@+id/tv_serial"
+        android:layout_toRightOf="@+id/tv_serial"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="资产名称:"
+        android:textColor="@color/black"
+        android:layout_alignLeft="@+id/tv_serial"
+        android:layout_below="@+id/tv_serial"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dsdsadada"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_alignBottom="@+id/tv_name"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:text="购置日期:"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/tv_name"
+        />
+
+    <TextView
+        android:id="@+id/tv_date_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dassdsadsa"
+        android:textColor="@color/black"
+        android:layout_alignBottom="@+id/tv_date"
+        android:layout_toRightOf="@+id/tv_date"
+        android:layout_marginLeft="30dp"
+        />
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/iv_check"
+        android:src="@mipmap/checked"
+        android:layout_alignBottom="@+id/tv_background"
+        android:layout_alignRight="@+id/tv_background"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        />
+</RelativeLayout>

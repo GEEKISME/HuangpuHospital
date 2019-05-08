@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        >
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="资产编号  :  "
+                android:id="@+id/tv_assetserialnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_assetserialnum"
+                android:layout_alignBottom="@+id/tv_assetserialnum"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/tv_assetserialnum_value"
+                android:textColor="@color/black"
+                android:text="dq-20181006-0001"
+                />
+            <TextView
+                android:id="@+id/tv_assetname"
+                android:layout_below="@+id/tv_assetserialnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="资产名称  :  "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打印机"
+                android:textColor="@color/black"
+                android:id="@+id/tv_assetname_value"
+                android:textSize="20sp"
+                android:layout_alignBottom="@+id/tv_assetname"
+                android:layout_toRightOf="@+id/tv_assetname"
+                android:layout_marginLeft="4dp"
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/tv_datepurchase"
+                android:layout_width="wrap_content"
+                android:text="购置日期  :  "
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_assetname_value"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_datepurchase_value"
+                android:text="2018-10-30"
+                android:textColor="@color/black"
+                android:layout_alignBottom="@+id/tv_datepurchase"
+                android:layout_toRightOf="@+id/tv_datepurchase"
+                android:textSize="20sp"
+                android:layout_marginLeft="4dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_placestored"
+                android:layout_below="@+id/tv_datepurchase"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="存放位置  :   "
+                />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_placestored_value"
+                android:layout_alignBottom="@+id/tv_placestored"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/tv_placestored"
+                android:layout_marginLeft="4dp"
+                android:text="信息科"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:textIsSelectable="true"
+                android:ellipsize="marquee"
+                />
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_keeper"
+                android:layout_below="@+id/tv_placestored"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="保管人      :   "
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_keeper_value"
+                android:layout_alignBottom="@+id/tv_keeper"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/tv_placestored"
+                android:layout_marginLeft="4dp"
+                android:text="崔浩"
+                />
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ischeck"
+                android:layout_below="@+id/tv_keeper"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="是否盘点  :   "
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ischeck_value"
+                android:layout_alignBottom="@+id/tv_ischeck"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/tv_placestored"
+                android:layout_marginLeft="4dp"
+                android:text="否"
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>
